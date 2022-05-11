@@ -1,10 +1,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Header } from "./components/header"
+import { TopHeader, LogoHeader } from "./components"
 
 function App() {
   return (
-    <Header />
+    <>
+      <TopHeader />
+      <LogoHeader />
+    </>
   );
 }
 

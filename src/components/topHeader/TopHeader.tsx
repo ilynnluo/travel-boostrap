@@ -1,9 +1,8 @@
 import React from "react";
-import styles from "./Header.module.css";
+import styles from "./TopHeader.module.css";
 import { Navbar, Nav, NavDropdown, Container, Row, Col, Stack } from "react-bootstrap";
-import { rgbToHex } from "@mui/material";
 
-export const Header = () => {
+export const TopHeader = () => {
   return <>
     <Navbar bg="light" expand="lg" style={{ padding: '0' }}>
       <Container>
