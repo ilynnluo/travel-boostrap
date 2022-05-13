@@ -1,0 +1,12 @@
+.topMenuItem {
+  padding-left: .5rem;
+  padding-right: .5rem;
+  font-size: 14px;
+}
+
+.topDropDownItem {
+  font-size: 12px;
+  color: #495057;
+  width: auto;
+  min-width: 1rem;
+}
