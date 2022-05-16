@@ -21,11 +21,6 @@ export const TopMenu = () => {
     <div>loading</div>
     console.log(loading)
   }
-  // else {
-  //   console.log("type is: " + typeof topMenu)
-  //   console.log("the first element is:" + topMenu[0])
-  //   console.log("value is:" + topMenu)
-  // }
 
   return <>
     <Navbar bg="primary" variant="dark" expand="lg" style={{ paddingTop: "4px", paddingBottom: "4px" }}>
@@ -37,7 +32,9 @@ export const TopMenu = () => {
               topMenu.map((m) => (
                 (m.subMenu.length === 0) ? (
                   <>
-                    <Nav.Link key={`menu-${m.id}`} style={{ "paddingRight": "1rem", "paddingLeft": "1rem", "fontSize": "14px"}}>
+                    <Nav.Link 
+                      key={`menu-${m.id}`} 
+                      style={{ "paddingRight": "1rem", "paddingLeft": "1rem", "fontSize": "14px"}}>
                       {m.title}
                     </Nav.Link>
                     <div className="vr" style={{ "height": "8px", "width": "auto" }} />
@@ -45,17 +42,18 @@ export const TopMenu = () => {
                 ) : (
                   <>
                     <NavDropdown
+                      key={`menu-${m.id}`}
                       title={m.title}
                       menuVariant="light"
                       className={styles["topMenuItem"]}
-                      
                     >
                       {
                         m.subMenu.map((sm: any) => (
-                          <NavDropdown.Item className={styles["topDropDownItem"]}>
+                          <NavDropdown.Item 
+                            key={`subMenu-${sm.id}`}
+                            className={styles["topDropDownItem"]}>
                             {sm.title}
                           </NavDropdown.Item>
-
                         ))}
                     </NavDropdown>
                     <div className="vr" style={{ "height": "8px", "margin": "auto" }} />

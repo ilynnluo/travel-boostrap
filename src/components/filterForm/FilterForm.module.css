@@ -1,0 +1,10 @@
+.filterFormText {
+  font-size: 14px;
+  color: #495057;
+  text-align: end;
+}
+
+.filterFormPlaceholder {
+  font-size: 12px;
+  color: #495057;
+}

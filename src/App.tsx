@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { TopHeader, LogoHeader, TopMenu, FilterForm } from "./components"
+import { TopHeader, LogoHeader, TopMenu, SearchBanner } from "./components"
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <TopHeader />
       <LogoHeader />
       <TopMenu />
-      <FilterForm />
+      <SearchBanner />
     </>
   );
 }
